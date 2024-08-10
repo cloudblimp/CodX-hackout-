@@ -1,5 +1,5 @@
 @extends('auth.layout_auth')
-@section('title', 'Login | Portfolio App')
+@section('title', 'Login')
 @section('content')
     <section class="vh-100">
         <div class="container h-100">
@@ -10,10 +10,10 @@
                             <div>
                                 <div class="mb-3">
                                     <div class="text-center">
-                                        <img width="50" height="50" src="{{ asset('images/logo1.png') }}"
+                                        <img width="50" height="50" src="{{ asset('images/logo.png') }}"
                                             alt="PortfolioNest">
                                     </div>
-                                    <p class="fs-3 fw-bold text-center mb-0">Sign In to PortfolioNest</p>
+                                    <p class="fs-3 fw-bold text-center mb-0">Sign In</p>
                                     <p class="text-center">Don't have an account? <a href="{{ route('register') }}"
                                             class="link-primary text-decoration-none">Sign up</a></p>
                                 </div>
@@ -29,11 +29,11 @@
                                         <i class="fa-brands fa-github"></i>
                                         <span class="ms-2 fs-6 flex-grow-1">Continue with GitHub</span>
                                     </a> --}}
-                                    <a href="{{ route('auth.phone') }}"
+                                    {{-- <a href="{{ route('auth.phone') }}"
                                         class="btn bsb-btn-2xl btn-outline-dark rounded-0 d-flex align-items-center">
                                         <i class="fa-solid fa-phone"></i>
                                         <span class="ms-2 fs-6 flex-grow-1">Continue with Phone Number</span>
-                                    </a>
+                                    </a> --}}
                                 </div>
 
                                 <hr class="w-75 border-3 border-dark rounded-0 mx-auto">

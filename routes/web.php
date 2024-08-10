@@ -8,7 +8,7 @@ use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\WeatherController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Auth::routes();
@@ -27,3 +27,4 @@ Route::get('reset-password/{token}', [ForgotPasswordController::class, 'showRese
 Route::post('reset-password', [ForgotPasswordController::class, 'submitResetPasswordForm'])->name('reset.password.post');
 
 Route::post('/weather', [WeatherController::class, 'showForecast']);
+Route::get('/crops', [WeatherController::class, 'crops'])->name('crops');

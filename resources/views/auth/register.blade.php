@@ -1,5 +1,5 @@
 @extends('auth.layout_auth')
-@section('title', 'Register | Portfolio App')
+@section('title', 'Register')
 @section('content')
     <section class="vh-100">
         <div class="container h-100">
@@ -10,10 +10,10 @@
                             <div>
                                 <div class="mb-5">
                                     <div class="text-center">
-                                        <img width="50" height="50" src="{{ asset('images/logo1.png') }}"
+                                        <img width="50" height="50" src="{{ asset('images/logo.png') }}"
                                             alt="PortfolioNest">
                                     </div>
-                                    <p class="fs-3 fw-bold text-center mb-0">Sign up to PortfolioNest</p>
+                                    <p class="fs-3 fw-bold text-center mb-0">Sign up</p>
                                     <p class="text-center m-0">Already have an account? <a href="{{ route('login') }}"
                                             class="link-primary text-decoration-none">Sign in</a></p>
                                 </div>
@@ -65,11 +65,11 @@
                                         <i class="fa-brands fa-google"></i>
                                         <span class="ms-2 fs-6 flex-grow-1">Continue with Google</span>
                                     </a>
-                                    <a href="{{ route('auth.phone') }}"
+                                    {{-- <a href="{{ route('auth.phone') }}"
                                         class="btn bsb-btn-2xl btn-outline-dark rounded-0 d-flex align-items-center">
                                         <i class="fa-solid fa-phone"></i>
                                         <span class="ms-2 fs-6 flex-grow-1">Continue with Phone Number</span>
-                                    </a>
+                                    </a> --}}
                                 </div>
                             </div>
                         </div>

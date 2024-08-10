@@ -1,5 +1,5 @@
 @extends('auth.layout_auth')
-@section('title', 'Reset Password | Portfolio App')
+@section('title', 'Reset Password')
 @section('content')
     <section class="vh-100">
         <div class="container h-100">
